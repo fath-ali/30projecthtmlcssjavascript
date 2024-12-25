@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart</title>
+</head>
+<style>
+    /* *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: rgb(7,7,20);
+    }
+    .gray-heart{
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    .gray-heart::before,
+    .gray-heart::after{
+        content: '';
+        background-color: #ccc;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+    .gray-heart:before{
+        top: -50px;
+        left: 0;
+    }
+    .gray-heart:after {
+        left: 50px;
+        top: 0;
+    }
+    .red-heart{
+        background-color: crimson;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        transform: rotate(-45deg);
+        visibility: hidden;
+    }
+    .red-heart:before,
+    .red-heart:after{
+        content: '';
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: crimson;
+    }
+    .red-heart:before{
+        top: -50px;
+        left: 0;
+    }
+    .red-heart:after{
+        left: 50px;
+        top: 0;
+    }
+    .red-heart.animatation{ 
+        animation: animat linear 0.5s;
+        visibility:visible;
+
+    }
+    .red-heart.file-color{
+        background-color: crimson;
+    } */
+    /* @keyframes animat{
+        100%{
+            transform: scale(1.7) rotate(-45deg);
+            opacity: 0;
+        }
+    } */
+
+     *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+     }
+     body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: rgb(7,7,20);
+     }
+     .gray-heart{
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background-color: white;
+      transform: rotate(-45deg);
+     }
+     .gray-heart:before,
+     .gray-heart:after{
+        content: '';
+      width:100px;
+      height: 100px;
+      position: absolute;
+      background-color: white;
+      border-radius: 50%;
+     }
+     .gray-heart:before{
+        top: -50px;
+        left: 0;
+     }
+     .gray-heart:after{
+        left: 50px;
+        top: 0;
+     }
+     .red-heart{
+        width: 100px;
+        height: 100px;
+        background-color: crimson;
+        position: absolute;
+        transform: rotate(-45deg);
+        visibility: hidden;
+     }
+     .red-heart:before,
+     .red-heart:after{
+        content:  '';
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color:crimson;
+        position:absolute;
+     }
+     .red-heart:before{
+        top: -50px;
+        left: 0;
+     }
+     .red-heart:after{
+        top: 0;
+        left:50px
+     }
+     .red-heart.fill-color{
+        background-color: crimson;
+     }
+     .red-heart.animate{
+          animation-name: pop;
+          animation-timing-function: linear;
+          animation-duration: 0.7s;
+          visibility: visible;
+        
+     }
+     @keyframes pop{
+        100%{
+            transform: scale(2.7) rotate(-45deg);
+            opacity: 0;
+        }
+     }
+</style>
+<body>
+    <div class="gray-heart"></div>
+    <div class="red-heart"></div>
+      
+    <script src="heart.js"></script>
+</body>
+</html>
